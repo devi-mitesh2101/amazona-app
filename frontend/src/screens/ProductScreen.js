@@ -41,7 +41,7 @@ export const ProductScreen = (props) => {
 					:
 					<div className='productscreen'>
 						<Link to='/' className='text-decoration-none'>Back to result</Link>
-						<div className='row my-3'>
+						<div className='row g-0'>
 							<div className='col-lg-6 col-md-6 col-sm-12'>
 								<img
 									className="large img-fluid"
@@ -49,7 +49,7 @@ export const ProductScreen = (props) => {
 									alt={product.name}
 								></img>
 							</div>
-							<div className='col-lg-3 my-3'>
+							<div className='col-lg-3 col-md-6 col-sm-6 my-3'>
 								<ul className="list-group">
 									<li className='list-unstyled'><h5>{product.name}</h5></li>
 									<li className='list-unstyled'><Rating rating={product.rating} numReviews={product.numReviews} /></li>
@@ -57,8 +57,8 @@ export const ProductScreen = (props) => {
 									<li className='list-unstyled'>Description : {product.description}</li>
 								</ul>
 							</div>
-							<div className='col-lg-3 my-3'>
-								<div className="card p-3 lh-lg bg-light" >
+							<div className='col-lg-3 col-md-12 col-sm-6 my-3'>
+								<div className="card p-2 lh-lg bg-light" >
 									<ul className="list-group ">
 										<li className='list-unstyled'>
 											<div className='d-flex justify-content-between'>
@@ -115,3 +115,7 @@ export const ProductScreen = (props) => {
 		</>
 	)
 }
+
+
+
+
