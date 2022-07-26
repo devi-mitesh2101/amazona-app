@@ -1,11 +1,12 @@
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import { HomeScreen } from './screens/HomeScreen'
 import { ProductScreen } from './screens/ProductScreen'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import CartScreen from './screens/CartScreen'
 import { SigninScreen } from './screens/SigninScreen'
-import Nav from './components/Nav'
+import { Nav } from './components/Nav'
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
         </Routes>
       </div>
 
-      {/* <footer className='bg-dark mt-auto text-white text-center p-1'>All right reserved</footer> */}
+      <footer className='bg-dark mt-auto text-white text-center fixed-bottom p-1'>All right reserved</footer>
       {/* </div> */}
     </BrowserRouter>
   )

@@ -42,7 +42,7 @@ export const ProductScreen = (props) => {
 					<div className='productscreen'>
 						<Link to='/' className='text-decoration-none'>Back to result</Link>
 						<div className='row g-0'>
-							<div className='col-lg-6 col-md-6 col-sm-12'>
+							<div className='col-lg-6 col-md-6 col-sm-12 pb-2'>
 								<img
 									className="large img-fluid"
 									src={product.image}

@@ -2,9 +2,10 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-export default function Nav() {
+export const Nav = () => {
 	const cart = useSelector((state) => state.cart);
 	const { cartItems } = cart;
+
 	const userSignin = useSelector((state) => state.userSignin);
 	const { userInfo } = userSignin;
 
@@ -26,23 +27,19 @@ export default function Nav() {
 									)}
 								</Link>
 							</li>
-							{/* <li className='nav-item'>
-								<Link className='nav-link text-white' to="/signin">Sign In</Link>
-							</li> */}
 							{
 								userInfo ? (
-									<Link to='#'>{userInfo.name}</Link>
+									<Link to='#' className='text-decoration-none text-white pt-1'>{userInfo.name}</Link>
 								) : (
 									<li className='nav-item'>
-										<Link className='nav-link text-white' to="/signin">Sign In</Link>
+										<Link className='nav-link text-white' to='/signin'>Sign in</Link>
 									</li>
 								)
 							}
-
 						</ul>
 					</div>
 				</div>
-			</nav>
-		</div>
+			</nav >
+		</div >
 	)
 }

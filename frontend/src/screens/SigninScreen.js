@@ -7,11 +7,18 @@ export const SigninScreen = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 
+	// const { search } = useLocation();
+	// const redirectInUrl = new URLSearchParams(search).get('redirect');
+	// const redirect = redirectInUrl ? redirectInUrl : '/';
+
+
 	const dispatch = useDispatch();
 	const submitHandler = (e) => {
 		e.preventDefault();
 		dispatch(signin(email, password));
 	}
+
+
 	return (
 		<div className='container mt-5 '>
 			<form className='w-50 m-auto' onSubmit={submitHandler}>
