@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       {/* <div className='container-fluid m-0 p-0'> */}
       <Nav />
-      <div className='main'>
+      <main>
         <Routes>
           <Route path='/' element={<HomeScreen />} exact></Route>
           <Route path='/product/:id' element={<ProductScreen />}></Route>
@@ -22,7 +22,7 @@ function App() {
           <Route path='/cart/:id' element={<CartScreen />}></Route>
 
         </Routes>
-      </div>
+      </main>
 
       <footer className='bg-dark mt-auto text-white text-center fixed-bottom p-1'>All right reserved</footer>
       {/* </div> */}

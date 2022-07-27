@@ -1,6 +1,7 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { signout } from '../actions/userActions';
 
 export const Nav = () => {
 	const cart = useSelector((state) => state.cart);
@@ -8,7 +9,11 @@ export const Nav = () => {
 
 	const userSignin = useSelector((state) => state.userSignin);
 	const { userInfo } = userSignin;
+	const dispatch = useDispatch();
 
+	const signoutHandler = () => {
+		dispatch(signout());
+	}
 	return (
 		<div>
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -19,17 +24,37 @@ export const Nav = () => {
 					</button>
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-							<li className="nav-item">
+
+							<li className="nav-item  ">
 								<Link className="nav-link text-white" aria-current="page" to="/cart">
 									Cart
 									{cartItems.length > 0 && (
-										<span className="badge bg-danger rounded-circle ms-1">{cartItems.length}</span>
+										<span className="badge bg-danger rounded-circle ms-2">{cartItems.length}</span>
 									)}
 								</Link>
 							</li>
 							{
 								userInfo ? (
-									<Link to='#' className='text-decoration-none text-white pt-1'>{userInfo.name}</Link>
+									<div className='nav-item dropdown'>
+										<Link to='#' className='nav-link dropdown-toggle text-decoration-none text-white'
+											id="dropdownMenu"
+											type="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false">
+											{userInfo.name}
+										</Link>
+										<ul className="dropdown-menu bg-dark text-center " aria-labelledby="dropdownMenu">
+
+											<Link className="dropdown-item text-white"
+												to="#signout"
+												onClick={signoutHandler}>
+												Sign Out
+											</Link>
+
+										</ul>
+
+									</div>
+
 								) : (
 									<li className='nav-item'>
 										<Link className='nav-link text-white' to='/signin'>Sign in</Link>

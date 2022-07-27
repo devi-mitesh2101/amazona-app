@@ -1,0 +1,24 @@
+.dropdown-menu {
+	min-width: auto !important;
+	display: none !important;
+	// margin-left: 1rem !important;
+	// 	// margin-right: 2rem;
+	// font-size: small;
+	right: 0;
+
+}
+
+.nav-link,
+a:hover {
+	color: $navbar-dark-hover-color  !important;
+}
+
+.dropdown-item {
+	background-color: transparent !important;
+}
+
+.dropdown {
+	&:hover .dropdown-menu {
+		display: block !important;
+	}
+}
