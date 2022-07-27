@@ -13,6 +13,8 @@ body {
 #root {
 	height: 100%;
 }
-
+.loading{
+	display: block !important;
+}
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
