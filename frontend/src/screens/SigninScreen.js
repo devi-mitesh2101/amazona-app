@@ -46,10 +46,9 @@ export const SigninScreen = () => {
 						onChange={e => setPassword(e.target.value)} />
 				</div>
 				<button type="submit" className="btn btn-warning w-100">Sign In</button>
-
 				<div className='mt-3'>
 					New Customer? {' '}
-					<Link to='/register' className='text-decoration-none'>Create your account</Link>
+					<Link to={`/register?redirect=${redirect}`} className='text-decoration-none'>Create your account</Link>
 				</div>
 			</form>
 		</div>

@@ -8,6 +8,7 @@ import CartScreen from './screens/CartScreen'
 import { SigninScreen } from './screens/SigninScreen'
 import { Nav } from './components/Nav'
 import { RegisterScreen } from './screens/RegisterScreen'
+import { ShippingAddressScreen } from './screens/ShippingAddressScreen'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/signin' element={<SigninScreen />}></Route>
           <Route path='/register' element={<RegisterScreen />}></Route>
           <Route path='/cart/:id' element={<CartScreen />}></Route>
+          <Route path='/shipping' element={<ShippingAddressScreen />}></Route>
 
         </Routes>
       </main>

@@ -2,6 +2,7 @@
 $card-border-color: #c0c0c0;
 $navbar-dark-hover-color: #ff8800;
 
+
 // $list-group-border: 0;
 body {
 	margin: 0;
@@ -13,8 +14,7 @@ body {
 #root {
 	height: 100%;
 }
-.loading{
-	display: block !important;
-}
+
+
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

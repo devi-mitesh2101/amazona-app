@@ -31,7 +31,7 @@ export default function CartScreen(props) {
 		navigate('/signin?redirect=/shipping')
 	}
 	return (
-		<div className='row my-4 align-content-center'>
+		<div className='row my-4 align-content-center g-0'>
 			<div className='col-lg-8'>
 				<h5 className='mb-3'>Shopping Cart</h5>
 				{cartItems.length === 0 ? <MessageBox>

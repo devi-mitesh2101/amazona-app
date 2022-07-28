@@ -38,7 +38,7 @@ export const RegisterScreen = () => {
 	return (
 		<div className='container mt-5 '>
 			<form className='w-50 m-auto' onSubmit={submitHandler}>
-				<h3 className='mb-3'>Register</h3>
+				<h3 className='mb-3'>Create Account</h3>
 				{loading && <LoadingBox></LoadingBox>}
 				{error && <MessageBox variant='danger'>{error}</MessageBox>}
 
@@ -66,7 +66,7 @@ export const RegisterScreen = () => {
 
 				<div className='mt-3'>
 					Already have an account? {' '}
-					<Link to='/signin' className='text-decoration-none'>Sign-In</Link>
+					<Link to={`/signin?redirect=${redirect}`} className='text-decoration-none'>Sign-In</Link>
 				</div>
 			</form>
 		</div>
