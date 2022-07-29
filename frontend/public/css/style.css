@@ -11166,16 +11166,4 @@ a:hover {
   display: block !important;
 }
 
-.checkout-steps > div {
-  border-top: 0.3rem #c0c0c0 solid;
-  color: #c0c0c0;
-  flex: 1;
-  padding: 1rem;
-}
-
-.checkout-steps > div .active {
-  border-top: #ffc107 !important;
-  color: #ffc107 !important;
-}
-
 /*# sourceMappingURL=style.css.map */

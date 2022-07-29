@@ -9,6 +9,7 @@ import { SigninScreen } from './screens/SigninScreen'
 import { Nav } from './components/Nav'
 import { RegisterScreen } from './screens/RegisterScreen'
 import { ShippingAddressScreen } from './screens/ShippingAddressScreen'
+import { PaymentMethodScreen } from './screens/PaymentMethodScreen'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/register' element={<RegisterScreen />}></Route>
           <Route path='/cart/:id' element={<CartScreen />}></Route>
           <Route path='/shipping' element={<ShippingAddressScreen />}></Route>
+          <Route path='/payment' element={<PaymentMethodScreen />}></Route>
 
         </Routes>
       </main>

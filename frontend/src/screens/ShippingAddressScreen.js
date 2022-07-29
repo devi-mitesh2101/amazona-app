@@ -28,7 +28,7 @@ export const ShippingAddressScreen = () => {
 		//TODO: dispatch save shippting address action
 	}
 	return (
-		<div className='g-0 mt-2'>
+		<div className='g-0 mt-2 container'>
 			<CheckoutSteps step1 step2></CheckoutSteps>
 			<form className='w-50 m-auto' onSubmit={submitHandler}>
 				<h3 className='mb-3 fw-bold'>Shipping Address</h3>
