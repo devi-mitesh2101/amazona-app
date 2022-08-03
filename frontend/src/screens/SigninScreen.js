@@ -29,7 +29,7 @@ export const SigninScreen = () => {
 	}, [navigate, redirect, userInfo]);
 
 	return (
-		<div className='container mt-5 '>
+		<div className='mt-5'>
 			<form className='w-50 m-auto' onSubmit={submitHandler}>
 				<h3 className='mb-3'>Sign In</h3>
 				{loading && <LoadingBox></LoadingBox>}

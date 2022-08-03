@@ -11143,8 +11143,8 @@ textarea.form-control-lg {
 }
 
 img .small {
-  max-width: 5rem;
-  width: 100%;
+  min-width: 5rem !important;
+  width: 100% !important;
 }
 
 .dropdown-menu {

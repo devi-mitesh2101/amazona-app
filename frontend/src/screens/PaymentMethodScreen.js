@@ -16,10 +16,10 @@ export const PaymentMethodScreen = () => {
 	const submitHandler = (e) => {
 		e.preventDefault();
 		dispatch(savePaymentMethod(paymentMethod));
-		navigate('/placeholder');
+		navigate('/placeorder');
 	}
 	return (
-		<div className='g-0 mt-2 container'>
+		<div className='g-0 mt-2'>
 			<CheckoutSteps step1 step2 step3></CheckoutSteps>
 			<form className='w-50 m-auto' onSubmit={submitHandler}>
 				<h3 className='mb-3 fw-bold'>Payment Method</h3>
