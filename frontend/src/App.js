@@ -24,6 +24,7 @@ function App() {
           <Route path='/signin' element={<SigninScreen />}></Route>
           <Route path='/register' element={<RegisterScreen />}></Route>
           <Route path='/cart/:id' element={<CartScreen />}></Route>
+          <Route path='/cart' element={<CartScreen />}></Route>
           <Route path='/shipping' element={<ShippingAddressScreen />}></Route>
           <Route path='/payment' element={<PaymentMethodScreen />}></Route>
           <Route path='/placeorder' element={<PlaceOrderScreen />}></Route>
