@@ -41,7 +41,7 @@ export const PlaceOrderScreen = () => {
 					<ul className='list-group'>
 						<li className='list-unstyled'>
 							<div className="card m-2">
-								<div class="card-body">
+								<div className="card-body">
 									<h3>Shipping</h3>
 									<p>
 										<strong>Name: </strong> {cart.shippingAddress.fullName} <br />
@@ -54,7 +54,7 @@ export const PlaceOrderScreen = () => {
 						</li>
 						<li className='list-unstyled'>
 							<div className="card m-2">
-								<div class="card-body">
+								<div className="card-body">
 									<h3>Payment</h3>
 									<p>
 										<strong>Method: </strong> {cart.paymentMethod}
@@ -64,7 +64,7 @@ export const PlaceOrderScreen = () => {
 						</li>
 						<li className='list-unstyled'>
 							<div className="card m-2">
-								<div class="card-body">
+								<div className="card-body">
 									<h3>Order Items</h3>
 									<ul>
 										{
@@ -94,7 +94,7 @@ export const PlaceOrderScreen = () => {
 				</div>
 				<div className='col-lg-4 col-md-4 col-sm-12'>
 					<div className="card m-2 ">
-						<div class="card-body mb-3">
+						<div className="card-body mb-3">
 							<ul>
 								<li className='list-unstyled'>
 									<h3 className='mb-3'> Order Summary</h3>
