@@ -13,6 +13,7 @@ import { PaymentMethodScreen } from './screens/PaymentMethodScreen'
 import { PlaceOrderScreen } from './screens/PlaceOrderScreen'
 import { OrderScreen } from './screens/OrderScreen'
 import { OrderHistoryScreen } from './screens/OrderHistoryScreen'
+import { ProfileScreen } from './screens/ProfileScreen'
 
 function App() {
 
@@ -32,11 +33,13 @@ function App() {
           <Route path='/placeorder' element={<PlaceOrderScreen />}></Route>
           <Route path='/order/:id' element={<OrderScreen />}></Route>
           <Route path='/orderhistory' element={<OrderHistoryScreen />}></Route>
+          <Route path='/profile' element={<ProfileScreen />}></Route>
         </Routes>
       </main>
-      <footer className="row d-flex bg-dark text-white justify-content-center fixed-bottom p-1 g-0">All right reserved @2022</footer>
-      {/* <footer className='bg-dark mt-auto text-white text-center fixed-bottom p-1'>All right reserved</footer> */}
-    </BrowserRouter>
+      <footer className="row d-flex justify-content-center fixed-bottom p-2">
+        All right reserved @2022
+      </footer>
+    </BrowserRouter >
   )
 }
 export default App

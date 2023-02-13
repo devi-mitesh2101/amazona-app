@@ -45,7 +45,7 @@ export const Nav = () => {
 										</Link>
 
 										<ul className="dropdown-menu bg-dark text-center " aria-labelledby="dropdownMenu">
-
+											<Link to='/profile' className='dropdown-item text-white'>User Profile</Link>
 											<Link to='/orderhistory' className='dropdown-item text-white'>Order History</Link>
 
 											<Link className="dropdown-item text-white"

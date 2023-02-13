@@ -19,7 +19,7 @@ export const OrderHistoryScreen = (props) => {
 			{loading ? <LoadingBox></LoadingBox> :
 				error ? <MessageBox variant='danger'>{error}</MessageBox> :
 					(
-						<table className="table container">
+						<table className="table table-striped table-bordered">
 							<thead>
 								<tr>
 									<th>ID</th>
@@ -35,13 +35,13 @@ export const OrderHistoryScreen = (props) => {
 									orders.map((order) => (
 										<tr key={order._id}>
 											<td>{order._id}</td>
-											<td>{order.createdAt.subString(0, 10)}</td>
-											<td>{order.totalPrice}</td>
-											<td>{order.isPaid ? order.paidAt.subString(0, 10) : 'No'}</td>
-											<td>{order.isDelivered ? order.deliveredAt.subString(0, 10) : 'No'}</td>
+											<td>{order.createdAt.substring(0, 10)}</td>
+											<td>{order.totalPrice.toFixed(2)}</td>
+											<td>{order.isPaid ? order.paidAt.substring(0, 10) : 'No'}</td>
+											<td>{order.isDelivered ? order.deliveredAt.substring(0, 10) : 'No'}</td>
 											<td>
 												<button type='button'
-													className='btn-sm'
+													className='btn btn-outline-dark btn-sm '
 													onClick={() => { navigate(`/order/${order._id}`) }}>Details</button>
 											</td>
 										</tr>
