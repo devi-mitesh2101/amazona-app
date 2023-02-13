@@ -12,6 +12,7 @@ import { ShippingAddressScreen } from './screens/ShippingAddressScreen'
 import { PaymentMethodScreen } from './screens/PaymentMethodScreen'
 import { PlaceOrderScreen } from './screens/PlaceOrderScreen'
 import { OrderScreen } from './screens/OrderScreen'
+import { OrderHistoryScreen } from './screens/OrderHistoryScreen'
 
 function App() {
 
@@ -30,10 +31,11 @@ function App() {
           <Route path='/payment' element={<PaymentMethodScreen />}></Route>
           <Route path='/placeorder' element={<PlaceOrderScreen />}></Route>
           <Route path='/order/:id' element={<OrderScreen />}></Route>
-
+          <Route path='/orderhistory' element={<OrderHistoryScreen />}></Route>
         </Routes>
       </main>
-      <footer className='bg-dark mt-auto text-white text-center fixed-bottom p-1'>All right reserved</footer>
+      <footer className="row d-flex bg-dark text-white justify-content-center fixed-bottom p-1 g-0">All right reserved @2022</footer>
+      {/* <footer className='bg-dark mt-auto text-white text-center fixed-bottom p-1'>All right reserved</footer> */}
     </BrowserRouter>
   )
 }

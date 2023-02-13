@@ -43,7 +43,10 @@ export const Nav = () => {
 											aria-expanded="false">
 											{userInfo.name}
 										</Link>
+
 										<ul className="dropdown-menu bg-dark text-center " aria-labelledby="dropdownMenu">
+
+											<Link to='/orderhistory' className='dropdown-item text-white'>Order History</Link>
 
 											<Link className="dropdown-item text-white"
 												to="#signout"

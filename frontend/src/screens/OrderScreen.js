@@ -14,7 +14,6 @@ export const OrderScreen = () => {
 	const [sdkReady, setSdkReady] = useState(false);
 	const orderDetails = useSelector((state) => state.orderDetails);
 	const { order, loading, error } = orderDetails;
-
 	const orderPay = useSelector(state => state.orderPay);
 	const { loading: loadingPay, error: errorPay, success: successPay } = orderPay;
 	const dispatch = useDispatch();
@@ -54,7 +53,7 @@ export const OrderScreen = () => {
 			:
 			(
 				<div className='mt-5'>
-					<h3>Order {order._id}</h3>
+					<h3 className='ms-2'>Order {order._id}</h3>
 					<div className='row g-0'>
 						<div className='col-lg-8 col-md-8 col-sm-12'>
 							<ul className='list-group'>
@@ -108,7 +107,7 @@ export const OrderScreen = () => {
 																<div className='col-lg-4 col-md-4 col-sm-6 d-flex'>
 																	<Link to={`/product/${item.product}`} className="text-decoration-none text-center">{item.name}</Link>
 																</div>
-																<div className='col-lg-4 col-md-5 col-sm-12 py-1'>
+																<div className='col-lg-4 col-md-5 col-sm-12 py-1 mb-5'>
 																	{item.qty} x ${item.price} = ${item.qty * item.price}
 																</div>
 															</div>
@@ -124,7 +123,7 @@ export const OrderScreen = () => {
 						</div>
 						<div className='col-lg-4 col-md-4 col-sm-12'>
 							<div className="card m-2 ">
-								<div className="card-body mb-3">
+								<div className="card-body">
 									<ul>
 										<li className='list-unstyled'>
 											<h3 className='mb-3'> Order Summary</h3>
