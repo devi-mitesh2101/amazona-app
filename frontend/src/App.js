@@ -14,6 +14,7 @@ import { PlaceOrderScreen } from './screens/PlaceOrderScreen'
 import { OrderScreen } from './screens/OrderScreen'
 import { OrderHistoryScreen } from './screens/OrderHistoryScreen'
 import { ProfileScreen } from './screens/ProfileScreen'
+import { PrivateRoute } from './components/PrivateRoute'
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
           <Route path='/placeorder' element={<PlaceOrderScreen />}></Route>
           <Route path='/order/:id' element={<OrderScreen />}></Route>
           <Route path='/orderhistory' element={<OrderHistoryScreen />}></Route>
-          <Route path='/profile' element={<ProfileScreen />}></Route>
+          <Route path='/profile' element={<PrivateRoute><ProfileScreen /></PrivateRoute>}></Route>
         </Routes>
       </main>
       <footer className="row d-flex justify-content-center fixed-bottom p-2">
